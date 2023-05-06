@@ -4,7 +4,7 @@ import starImage from "../assets/img/svg/star.svg";
 import dots from "../assets/img/png/dots.png";
 const HeroSection = () => {
   return (
-    <div className="d-flex flex-column py-5 position-relative z_3 align-items-center justify-content-center flex-grow-1">
+    <div className="d-flex flex-column py-3 py-sm-4 py-md-5 position-relative z_3 align-items-center justify-content-center flex-grow-1">
       <img
         className="position-absolute animationScale image1"
         src={dots}

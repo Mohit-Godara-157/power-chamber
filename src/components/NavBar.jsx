@@ -4,6 +4,11 @@ import navlogo from "../assets/img/svg/navLogo.svg";
 
 const NavBar = () => {
   const [first, setfirst] = useState(true);
+  if (first) {
+    document.body.style.overflow = "visible";
+  } else {
+    document.body.style.overflow = "hidden";
+  }
   return (
     <div className="navBg">
       <Container>

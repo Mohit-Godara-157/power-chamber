@@ -5,6 +5,18 @@
   text-decoration: none !important;
   box-sizing: border-box;
 }
+.preloader {
+  background-color: #248145;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 6;
+}
 :root {
   --fs-xsm: 16px;
   --fs-sm: 36px;
@@ -215,6 +227,7 @@ path {
     width: 100%;
     background-color: #025928;
     display: flex;
+    z-index: 8;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -228,6 +241,7 @@ path {
     width: 100%;
     background-color: #025928;
     display: flex;
+    z-index: 8;
     flex-direction: column;
     justify-content: center;
     align-items: center;
