@@ -26,6 +26,12 @@
 .fs_xsm {
   font-size: var(--fs-xsm);
 }
+.fs_2xsm {
+  font-size: var(--fs-2xsm);
+}
+.fs_3xsm {
+  font-size: var(--fs-3xsm);
+}
 .fs_sm {
   font-size: var(--fs-sm);
 }
