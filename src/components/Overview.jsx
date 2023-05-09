@@ -51,8 +51,8 @@ const Overview = () => {
             <img
               className={
                 first === 3
-                  ? "h_315 my-4 pt-1  w-75 d-block"
-                  : "h_315 my-4 pt-1  w-75 d-none"
+                  ? "h_315 my-5 pt-1  w-75 d-block"
+                  : "h_315 my-5 pt-1  w-75 d-none"
               }
               src={image1}
               alt="image1"
@@ -60,8 +60,8 @@ const Overview = () => {
             <img
               className={
                 first === 1
-                  ? "h_315 my-4 pt-1  w-75 d-block"
-                  : "h_315 my-4 pt-1  w-75 d-none"
+                  ? "h_315 my-5 pt-1  w-75 d-block"
+                  : "h_315 my-5 pt-1  w-75 d-none"
               }
               src={image2}
               alt="image2"
@@ -69,8 +69,8 @@ const Overview = () => {
             <img
               className={
                 first === 2
-                  ? "h_315 my-4 pt-1  w-75 d-block"
-                  : "h_315 my-4 pt-1  w-75 d-none"
+                  ? "h_315 my-5 pt-1  w-75 d-block"
+                  : "h_315 my-5 pt-1  w-75 d-none"
               }
               src={image3}
               alt="image3"
@@ -110,7 +110,10 @@ const Overview = () => {
                 Platte River Sold Out?{" "}
                 <span className="d-block">We can get you a</span> reservation!
               </h2>
-              <div className="p-4 sectionBorder mt-lg-5 mt-4 ">
+              <div className="p-4 sectionBorder  mt-4 ">
+                <h2 className="fs_3xsm fw-bold text-white ff_ComicGecko text-center mb-3">
+                  GET STARTED HERE
+                </h2>
                 <div className="d-sm-flex align-items-center">
                   <select
                     className=" select_box curser ff_Calibri arrow pe-5 fw-normal w_25 w_xsm_100 fs_xsm text-white py-2 px-3"
