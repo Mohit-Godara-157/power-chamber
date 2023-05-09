@@ -9,11 +9,11 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 const Rating = () => {
   return (
     <div className=" py-3 py-lg-5">
-      <div className=" z_3 position-relative pt-lg-5">
-        <div className="positionBox position-absolute"></div>
+      <div className="  pt-lg-5">
         <Container>
-          <Row className="pt-5 pb-lg-5">
-            <Col lg={3} className="my-2 my-lg-0 ">
+          <Row className="pt-4 pb-lg-5">
+            <Col lg={3} className="my-2 my-lg-0 z_3 position-relative ">
+              <div className="positionBox position-absolute"></div>
               <div className="ratingBackground p-3 p-lg-0 ">
                 <h2 className="ff_ComicGecko text-white fs_3xsm fw-bold ">
                   Ratings Summary{" "}
@@ -110,12 +110,12 @@ const Rating = () => {
                   </DropdownButton>
                 </Col>
               </Row>
-              <div className="d-flex mt-5">
+              <div className="d-sm-flex mt-5">
                 <div className="mb-0">
                   <div className="imageBorder p-1">
                     <img className="w-100" src={manImage} alt="manImage" />
                   </div>
-                  <h4 className="mb-0 text-center text-white fs_xsm ff_Calibri fw-bold">
+                  <h4 className="mb-0 text-center text-white fs_xsm mt-2 mt-sm-0 ff_Calibri fw-bold">
                     Snoopinaround
                   </h4>
                   <p className="mb-0 text-center text_green_50 fs_xsm ff_Calibri fw-bold ">
@@ -127,24 +127,26 @@ const Rating = () => {
                   <p className="mb-0 text-center text_green_50 fs_xsm ff_Calibri fw-bold mt-1">
                     21 reviews
                   </p>
-                  <button className="fs_xsm ff_ComicGecko text-white fw-bold mt-4 logBtn">
-                    Member
-                  </button>
+                  <div className="d-flex justify-content-center pt-1">
+                    <button className="fs_xsm ff_ComicGecko text-white fw-bold mt-3 logBtn">
+                      Member
+                    </button>
+                  </div>
                 </div>
-                <div className="ms-2 ms-sm-5 mt-md-4">
+                <div className="ms-2 ms-sm-5 mt-3 mt-sm-0 mt-md-4">
                   <p className="mb-0 text-white fs_xsm fw-bold ff_Calibri">
                     Outstanding Campground
                   </p>
                   <p className="mb-0 text_green_50 fs_xsm fw-normal ff_Calibri ">
                     Reviewed 10/24/2021
                   </p>
-                  <div className="d-flex align-items-center my-3">
+                  <div className="d-flex align-items-center my-2 my-md-3 my-lg-1 my-xl-3">
                     <p className="mb-0 text-white fs_xsm fw-normal ff_Calibri ">
                       Overall Rating
                     </p>
                     <img className="ms-3" src={star2} alt="star2" />
                   </div>
-                  <p className="mb-0 text_green_50 fs_xsm fw-normal ff_Calibri mt-3">
+                  <p className="mb-0 text_green_50 fs_xsm fw-normal ff_Calibri mt-1 mt-md-3 mt-lg-1 mt-xl-3">
                     The government campgrounds are the best and this one is no
                     exception. We stayed in loop #1 with electricity. Spacious
                     and private sites with fire rings and picnic tables.{" "}

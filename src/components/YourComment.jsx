@@ -5,7 +5,7 @@ import dots2 from "../assets/img/png/dots2.png";
 
 const YourComment = () => {
   return (
-    <div className="py-lg-5 position-relative z_3 ">
+    <div className="py-lg-5 py-3 position-relative z_3 ">
       <img
         className="position-absolute animationScale image6"
         src={dots2}
@@ -22,11 +22,11 @@ const YourComment = () => {
         alt="dots2"
       />
       <Container>
-        <div className="bgImage py-5">
+        <div className="bgImage py-3 py-lg-5">
           <h3 className="text-center text-white pt-3 pt-sm-5 fs_sm ff_ComicGecko fw-bold">
             Your comment/rating/review;
           </h3>
-          <div className="commentSectionBg px-2 my-5 py-3 py-lg-4">
+          <div className="commentSectionBg px-2 my-3 my-mg-4 my-lg-5 py-3 py-lg-4">
             <h3 className="text-white text-center ff_Calibri fs_3xsm fw-bold">
               Your Rating
             </h3>

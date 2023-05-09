@@ -33,7 +33,7 @@ const HeroSection = () => {
       <Container>
         <div className="sectionBackground mx-auto">
           <div className="sectionSecond text-center">
-            <h1 className="fs_sm ff_ComicGecko fw-bold text-white">
+            <h1 className="fs_sm ff_ComicGecko fw-bold pt-3 pt-sm-0 text-white">
               Platte River Campground
             </h1>
             <p className="text_white_70 ff_Calibri fw-normal fs_xsm">
@@ -45,7 +45,7 @@ const HeroSection = () => {
               <span className="d-block curser">
                 Contact: +1 231 326 5134
               </span>{" "}
-             <span className="curser"> www.example.com</span>
+              <span className="curser"> www.example.com</span>
             </p>
             <Row className="align-items-center justify-content-center justify-content-sm-around ">
               <Col
@@ -91,7 +91,7 @@ const HeroSection = () => {
                 </div>
               </Col>
             </Row>
-            <Row className="align-items-center justify-content-around pt-5">
+            <Row className="align-items-center justify-content-around py-4 py-sm-0 pt-sm-5">
               <Col
                 xs={6}
                 sm={3}

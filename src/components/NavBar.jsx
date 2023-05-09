@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import navlogo from "../assets/img/svg/navLogo.svg";
-
+import closeBtn from "../assets/img/png/closebtn.png";
 const NavBar = () => {
   const [first, setfirst] = useState(true);
   if (first) {
@@ -12,9 +12,9 @@ const NavBar = () => {
   return (
     <div className="navBg">
       <Container>
-        <nav className="d-flex align-items-center justify-content-between">
+        <nav className="d-flex align-items-center justify-content-between ">
           <a href="#">
-            <img className="w_50" src={navlogo} alt="navlogo" />
+            <img className="w_xsm_50" src={navlogo} alt="navlogo" />
           </a>
           <ul
             className={
@@ -23,10 +23,13 @@ const NavBar = () => {
                 : "d-flex align-items-center  mb-0 ps-0 openNav"
             }
           >
-            <button
-              className="btn-close position-absolute end-0 top-0 m-5 bg-white opacity-100 d-lg-none"
+            <img
               onClick={() => setfirst(true)}
-            ></button>
+              className="position-absolute end-0 top-0 m-5 rounded-5 d-lg-none"
+              src={closeBtn}
+              width={30}
+              alt="closeBtn"
+            />
             <li
               className="my-2 my-lg-0 mx-lg-3 "
               onClick={() => setfirst(true)}

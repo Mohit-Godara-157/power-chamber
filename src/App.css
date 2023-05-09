@@ -58,6 +58,9 @@
 .text_greenLight_20 {
   color: #b6d2c3;
 }
+.text_dark {
+  color: #4b4d4c;
+}
 
 /* background */
 .navBg {
@@ -98,6 +101,24 @@
   max-width: 908px;
   margin: 0 auto;
 }
+.platteBackground {
+  background: linear-gradient(
+      158.49deg,
+      #26a646 0.17%,
+      #025928 20.08%,
+      #025928 69.42%,
+      #26a646 98.08%
+    ),
+    #025928;
+  border-radius: 8px;
+}
+.sectionBorder {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18.5px);
+  border-radius: 8px;
+}
 /* ****** */
 .sectionThird {
   background-image: url("../src/assets/img/png/bgImage.png");
@@ -111,7 +132,7 @@
 }
 /* navbar */
 .navLinks {
-  padding: 31px 10px 10px 18px;
+  padding: 31px 10px 18px 10px;
   background-color: transparent;
   border-bottom: 2px solid transparent;
   transition: 0.5s ease-in-out;
@@ -126,7 +147,7 @@
   border-radius: 30px;
   background-color: transparent;
   transition: 0.5s ease-in-out;
-  padding: 10px 28px;
+  padding: 8px 28px;
   letter-spacing: 0.03em;
 }
 .logBtn {
@@ -208,6 +229,22 @@
   border-radius: 8px !important;
 }
 /* other */
+.select_box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18.5px);
+  border-radius: 8px;
+}
+select {
+  -webkit-appearance: none;
+}
+select.arrow {
+  background-image: url("/src/assets/img/svg/downArrow.svg") !important;
+  background-position: calc(100% - 15px) 18px, calc(100% - 20px) 1em, 100% 0;
+  background-repeat: no-repeat;
+  outline: 0;
+}
 .imageBorder {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -218,6 +255,19 @@
 .mw_640 {
   max-width: 640px;
 }
+.h_315 {
+  height: 315px;
+}
+.w_25 {
+  width: 25%;
+}
+.w_50 {
+  width: 50%;
+}
+.w_75 {
+  width: 75%;
+}
+
 .inputModify {
   padding: 16px 40px;
   background: rgba(255, 255, 255, 0.05);
@@ -230,9 +280,31 @@
 ::placeholder {
   color: #bad4c6;
 }
-
+.threeImageBox {
+  max-width: 270px;
+  margin-right: auto;
+  margin-left: auto;
+  background: linear-gradient(
+      158.49deg,
+      #26a646 0.17%,
+      #025928 20.08%,
+      #025928 69.42%,
+      #26a646 98.08%
+    ),
+    rgba(0, 0, 0, 0.05);
+  border: 0.866019px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3.46408px 13.8563px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16.0214px);
+  border-radius: 6.92815px;
+}
 path {
   transition: 0.4s ease-in-out !important;
+}
+.imgScale1 {
+  scale: 1.2;
+}
+.imgScale0 {
+  scale: 1;
 }
 .hoverText {
   transition: 0.4s ease-in-out;
@@ -242,6 +314,14 @@ path {
 }
 .curser {
   cursor: pointer;
+}
+.mw_134 {
+  max-width: 334px;
+  width: 100%;
+}
+.mw_108 {
+  max-width: 108px;
+  width: 100%;
 }
 .vh_xl_100 {
   height: 100vh;
@@ -330,17 +410,43 @@ path {
   rotate: 180deg;
   z-index: -1;
 }
+.image9 {
+  bottom: 10%;
+  width: 7%;
+  left: -3%;
+  rotate: 70deg;
+  z-index: -1;
+}
+.image10 {
+  top: 12%;
+  width: 7%;
+  right: -3%;
+  rotate: 180deg;
+  z-index: -1;
+}
 .positionBox {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(18.5px);
-  height: 350px;
-  width: 400px;
-  left: 10px;
-  top: 13%;
+  height: 340px;
+  width: 390px;
+  left: 7%;
+  top: -4%;
   z-index: -1;
+  transform: translateX(-21%);
   border-radius: 0px 8px 8px 0px;
+}
+.blackDots::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #4b4d4c;
+  border-radius: 50%;
+  position: absolute;
+  left: -3%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 /* animation  */
 .animationScale {
@@ -370,14 +476,10 @@ path {
     width: 320px;
   }
   .sectionThird {
-    background-image: url("../src/assets/img/png/bgImage.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #00622b;
   }
   .bgImage {
-    background-image: url("../src/assets/img/png/bgImage2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #00622b;
   }
   .btn-primary {
     height: 62px !important;
@@ -443,13 +545,19 @@ path {
   .sectionSecond {
     padding: 0;
   }
-  .w_50 {
+  .w_xsm_50 {
     width: 50px;
   }
   .signBtn {
-    padding: 9px 19px;
+    padding: 7px 19px;
   }
   .logBtn {
     padding: 8px 12.5px;
+  }
+  .w_xsm_100 {
+    width: 100% !important;
+  }
+  .h_315 {
+    height: 165px;
   }
 }
